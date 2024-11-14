@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gd/pages/onboarding.dart';
-import 'package:gd/pages/login.dart';
+
 
 
 
