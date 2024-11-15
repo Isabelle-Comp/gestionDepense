@@ -15,7 +15,7 @@ class OnboardingPageState extends State<OnboardingPage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.lightBlue[50],
 
 
         body: Stack(
@@ -61,7 +61,7 @@ class OnboardingPageState extends State<OnboardingPage> {
                           MaterialPageRoute(builder: (context) => const LoginPage()),
                         );
                       },
-                      child: const Text('Se connecter'),
+                      child: const Text('Se connecter', ),
                     ),
                   ),
                 ],
