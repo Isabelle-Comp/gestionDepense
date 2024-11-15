@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:gestion_depenses/pages/onboardingWidget.dart';
 import 'login.dart'; // Importez la page de connexion/déconnexion
 
 class OnboardingPage extends StatefulWidget {
@@ -14,26 +15,18 @@ class OnboardingPageState extends State<OnboardingPage> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(),
+        backgroundColor: Colors.blue,
+
+
         body: Stack(
           children: [
             PageView(
-              children: [
-                // Page 1 du onboarding
-                Container(
-                  color: Colors.blue,
-                  child: const Center(child: Text("Page 1")),
-                ),
-                // Page 2 du onboarding
-                Container(
-                  color: Colors.green,
-                  child: const Center(child: Text("Page 2")),
-                ),
-                // Page 3 du onboarding
-                Container(
-                  color: Colors.orange,
-                  child: const Center(child: Text("Page 3")),
-                ),
+              children: const [
+                OnboardingWidget(title: "GD", subtitle: "Gestion de Depense", image: "assets/images/img1.png"),
+                OnboardingWidget(title: "", subtitle: "Plus besion de passer du temps a calculer manuellement ses depenses", image: "assets/images/img2.jpg"),
+                OnboardingWidget(title: "", subtitle: "Visualiser vos depenses sous forme de graphe", image: "assets/images/img3.jpg"),
+
+
               ],
             ),
             // Ajouter un bouton pour accéder à la page de connexion
@@ -68,7 +61,7 @@ class OnboardingPageState extends State<OnboardingPage> {
                           MaterialPageRoute(builder: (context) => const LoginPage()),
                         );
                       },
-                      child: const Text('Commencer'),
+                      child: const Text('Se connecter'),
                     ),
                   ),
                 ],
