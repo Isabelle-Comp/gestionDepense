@@ -21,4 +21,4 @@ dev_dependencies:
 # Configuration des assets (par exemple pour des images, des icônes, etc.)
 flutter:
   assets:
-    - images/  # Si vous avez un dossier 'images' pour les assets
+    - assets/images/  # Si vous avez un dossier 'images' pour les assets

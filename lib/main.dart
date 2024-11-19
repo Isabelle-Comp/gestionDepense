@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'onboarding.dart';
+import 'package:gestion_depenses/pages/onbaording.dart';
+
 
 
 
