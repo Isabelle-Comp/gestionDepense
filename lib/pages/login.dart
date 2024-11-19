@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'signup.dart'; // Import de la page d'inscription
+import 'inscription.dart'; // Import de la page d'inscription
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -68,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
                   // Naviguer vers la page d'inscription
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const SignUpPage()),
+                    MaterialPageRoute(builder: (context) => const Inscription()),
                   );
                 },
                 child: const Text("Pas de compte ? S'inscrire"),

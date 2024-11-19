@@ -75,7 +75,7 @@ class OnboardingPageState extends State<OnboardingPage> {
                   onPressed: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => const SignUpPage()), // Redirection vers la page d'inscription
+                      MaterialPageRoute(builder: (context) => const Inscription()), // Redirection vers la page d'inscription
                     );
                   },
                   child: const Text("S'inscrire"),
