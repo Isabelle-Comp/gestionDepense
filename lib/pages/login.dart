@@ -68,7 +68,7 @@ class _LoginPageState extends State<LoginPage> {
                     : 'Veuillez vous connecter.',
                 style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
                 textAlign: TextAlign.center,
-              ),
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ),
               const SizedBox(height: 20),
 
               // Si l'utilisateur est déconnecté, afficher les champs email et mot de passe
